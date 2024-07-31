@@ -1,0 +1,23 @@
+{% extends 'builder/base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="m-5 p-5" >
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-5 card gap-2" id="card">
+            <div class="m-2">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="abc@gmail.com" required>
+            </div>
+            <div class="m-2">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+            </div>
+            <button class="btn  m-2 p-2" type="submit" style="background-color: #088395; color: white;">Submit</button>
+            <div class="m-2 text-center">Don't have an account? <a href="{% url 'register' %}" class="reg_a">Sign up</a></div>
+        </div>
+    </form>
+</div>
+{% endblock %}
