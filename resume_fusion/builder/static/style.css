@@ -62,4 +62,20 @@ body{
   font-weight: bolder;
   color: #071952;
 }
+.nav1{
+  background-color: #088395;
+  padding: 7px;
+  box-shadow: 0 0 10px #088395;
+  border-radius: 90px;
+
+}
+.paper{
+  height: 800px;
+  width: 1000px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
   
