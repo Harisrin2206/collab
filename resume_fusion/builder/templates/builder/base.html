@@ -20,13 +20,13 @@
           <img src="{% static 'logo.png' %}" width="100px" height="100px">
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="dashboard/"><i class="fa-solid fa-house fa-2x" style="color:#ffffff"></i></a>
+          <a class="nav-link" href="{% url 'dashboard' %}"><i class="fa-solid fa-house fa-2x" style="color:#ffffff"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="forms/"><i class="fa-solid fa-file-pen fa-2x"style="color:#ffffff"></i></a>
+          <a class="nav-link" href="{% url 'forms' %}"><i class="fa-solid fa-file-pen fa-2x"style="color:#ffffff"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="design/"><i class="fa-solid fa-sliders fa-2x"style="color:#ffffff"></i></a>
+          <a class="nav-link" href="{% url 'design' %}"><i class="fa-solid fa-sliders fa-2x"style="color:#ffffff"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="download/"><i class="fa-solid fa-download fa-2x"style="color:#ffffff"></i></a>
