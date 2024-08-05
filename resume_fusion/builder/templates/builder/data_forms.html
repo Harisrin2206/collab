@@ -1,7 +1,94 @@
 {% extends 'builder/base.html' %}
 {% load static %}
 {% block title %}Forms{% endblock %}
+<form>
+    <section id="Personal_info" height="600px" width="400px" style="box-shadow: 0 0 5px #071952; padding: 5rem; border-radius :25px ;">
+        <h1>Personal Information</h1>
+        <div class="p">
+        <div class="p1">
+        <label for="f_name">First Name </label>
+        <input type="text" name="f_name" id="f_name"><br><br>
+        <label for="l_name">Last Name </label>
+        <input type="text" name="l_name" id="l_name"><br><br>
+        <label for="Gender">Gender </label>
+        <br>
+        <div class="genders">
+            <div class="male">
+                <button><i class="fa-solid fa-mars fa-2x"></i><input type="radio" name="Gender" id="Gender"></button>
+            </div>
+            <div class="female">
+                <button><i class="fa-solid fa-venus  fa-2x" ></i><input type="radio" name="Gender" id="Gender"></button>
+            </div>
+            <div class="others">
+                <button><i class="fa-solid fa-transgender fa-2x"></i><input type="radio" name="Gender" id="Gender"></button>
+            </div>
+        </div>
+        </div>
+        <div class="p2">
+        <label for="dob">Date of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" name="dob" id="dob" class="dob"><br><br>
+        <label for="mobile_num">Mobile Number</label>
+        <input type="text" name="mobile_num" id="mobile_num"><br><br>
+        <label for="mail">E Mail</label><br>
+        <input type="email" name="mail" id="mail">
+        </div>
+        </div>
 
+
+    </section>
+
+    <section id="Education" class="educations" height="600px" width="400px" style="box-shadow: 0 0 5px #071952; padding: 5rem; border-radius :25px ; margin-top: 3rem;">
+        <h1>Education Details</h1>
+        <div class="education">
+            <div class="school">
+                <h2 style="text-align: center;">School</h2>
+                <div id="sch-name"> 
+                    School Name &nbsp;&nbsp;<input type="text" name="sch-name" placeholder="School Name"><br>
+                    Passed Year &nbsp;&nbsp;&nbsp;&nbsp; <input type="month" name="sch-year" placeholder="Passed year"><br>
+                    Percentage &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="Percentage"></div>
+                </div>
+            <div class="college">
+                <h2 style="text-align: center;">University</h2>
+                <div id="college">
+                    College Name <input type="text" name="col-name" ><br>
+                    Degree &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="col-name" ><br>
+                    Branch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="col-name"  ><br>
+                    Passed year &nbsp;&nbsp;&nbsp;&nbsp; <input type="month" name="col-name">
+                </div>
+
+            </div>
+        </div>   
+    </section>
+        <br><br><br><br>
+    <div class="experience">
+            <h1>Experience</h1>
+            <h2>
+            <label for="job">Role</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text "class="job" id="job"><br>
+            <label for="company">Company Name</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" class="company" id="company"><br>
+            <label for="pro_involved">Projects Involved</label>&nbsp;&nbsp;
+            <input type="text" class="pro_involved" id="pro_involved"><br>
+            <label for="pro_description">Project Description</label>
+            <input type="text" class="pro_description" id="pro_description"><br>
+            <button type="button" class="btn btn-outline-success">Add Experience</button>
+        </h2>
+        </div>     
+
+    
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+
+    <section>
+
+    </section>
+  </form>
 {% block content %}
 <h1>Forms Works</h1>
 {% endblock %}
